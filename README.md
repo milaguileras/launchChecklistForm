@@ -5,7 +5,7 @@ Using our knowledge of forms, the DOM, and HTTP, the commanders of our favorite 
 
 Our pilot, Chris, and the co-pilot, Blake, have been hard at work securing the cargo and filling the shuttle tank. All we need to do is use validation to ensure that we have all of the info for the space shuttle program and make sure no one prematurely launches the shuttle.
 
-#Requirements
+# Requirements
 Create a Launch Checklist Form for astronauts to fill out in preparation for launch. The form should do the following:
 
 Validate the user responses with preventDefault() to ensure the following:
@@ -18,14 +18,14 @@ Setting Up Your Project Repository
 Fork the repository with the starter code to your personal GitHub profile and clone the repository to the directory where you are keeping your assignments for the class.
 
 
-#Adding Validation
+# Adding Validation
 First, let's add validation to notify the user if they forgot to enter a value for any one of the fields.
 Make sure to use preventDefault() and an alert to notify the user that all fields are required.
 
 You also want to make sure that the user entered valid info for each of the fields. Valid information for the fields means that the user submits a value that is easily converted to the correct data type for our fellow engineers. The pilot and co-pilot names should be strings and the fuel level and cargo mass should be numbers.
 
 
-#Updating Shuttle Requirements
+# Updating Shuttle Requirements
 The list of shuttle requirements, the div with the id faultyItems, should be updated if something is not ready for launch. Using template literals, update the li elements pilotStatus and copilotStatus to include the pilot's name and the co-pilot's name.
 
 If the user submits a fuel level that is too low (less than 10,000 liters), change faultyItems to visible with an updated fuel status stating that there is not enough fuel for the journey. The text of the h2 element, launchStatus, should also change to "Shuttle not ready for launch" and the color should change to red.
@@ -34,11 +34,11 @@ If the user submits a cargo mass that is too large (more than 10,000 kilograms),
 
 If the shuttle is ready to launch, change the text of launchStatus to green and display "Shuttle is ready for launch".
 
-#Fetching Planetary Data
+# Fetching Planetary Data
 Finally, we need some JSON to fill in the crew on the mission destination. Our planetary data can be found in JSON format. Review the list and decide which planet you want to send our intrepid crew to and make note of the index number.
 
 
 In script.js, we have a block of code commented out at the top. This is the format of the innerHTML for the missionTarget div. Be sure to include the appropriate variables in the template literals!
 
-#Bonus Mission
+# Bonus Mission
 Use whichever method you choose to randomly select the mission destination from the available options in the JSON file.
